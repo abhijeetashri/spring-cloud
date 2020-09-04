@@ -1,0 +1,10 @@
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka
+spring:
+  application:
+    name: product-manager
+  h2:
+    console:
+      enabled: 'true'

@@ -1,0 +1,28 @@
+server:
+  port: '8888'
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+#          uri: file://${user.home}/config-repo
+          uri:  file:///D:/github/configuration
+
+######### For application properties loaded from local system without GIT
+#spring:
+#  profiles:
+#    active:
+#    - native
+#  cloud:
+#    config:
+#      server:
+#        native:
+#          search-locations:
+#          - file:///E:/github
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka

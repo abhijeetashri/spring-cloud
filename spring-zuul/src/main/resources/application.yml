@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: zuul-api
+
+zuul:  routes:    flights:
+      path: /api/flights/routes/**
+      url: http://localhost:8091/routes
